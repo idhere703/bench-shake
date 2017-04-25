@@ -12,8 +12,8 @@ const Timeline = ({timeline}) => {
               </p>
             </div>
             <div className="timeline">
-              { timeline.events.map(event => {
-                  return (<Event event={ event }></Event>);
+              { timeline.events.map((event, index) => {
+                  return (<Event key={ `event-${index}` } event={ event }></Event>);
                 }) }
             </div>
           </div>);
