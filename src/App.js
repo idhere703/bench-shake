@@ -16,10 +16,12 @@ const events = {
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <Timeline timeline={ events }></Timeline>
+      <div className="App">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <Timeline timeline={ events }></Timeline>
+            </div>
           </div>
         </div>
       </div>
