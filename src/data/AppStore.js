@@ -23,7 +23,7 @@ class AppStore extends ReduceStore {
     reduce(state, action) {
         switch (action.type) {
             case AppActionTypes.ADD_CONTACT:
-                // Don't add contacts with missing data with no text.
+                // Don't add contacts with missing data.
                 if (!action.email || !action.name || action.phone) {
                     return state;
                 }
