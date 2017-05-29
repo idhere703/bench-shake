@@ -14,16 +14,16 @@ import AppActions from './data/AppActions';
 
 AppActions.addContact({
   email: 'testingappB@mailinator.com',
-  name: 'Regular Person',
+  name: 'Regular Person 1',
   phone: '843-867-3090'
 });
 AppActions.addContact({
   email: 'testingappB@mailinator.com',
-  name: 'Regular Person',
+  name: 'Regular Person 2',
   phone: '000-000-0000'
 });
 AppActions.addContact({
   email: 'testingappB@mailinator.com',
-  name: 'Regular Person',
+  name: 'Regular Person 3',
   phone: '843-123-3210'
 });

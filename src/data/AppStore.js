@@ -23,11 +23,11 @@ class AppStore extends ReduceStore {
     reduce(state, action) {
         switch (action.type) {
             case AppActionTypes.ADD_CONTACT:
+                console.log('Adding contact', action);
                 // Don't add contacts with missing data.
-                if (!action.email || !action.name || action.phone) {
+                if (!action.email || !action.name || !action.phone) {
                     return state;
                 }
-
                 const id = Counter.increment();
                 return state.set(id, new Contact({
                     id,
